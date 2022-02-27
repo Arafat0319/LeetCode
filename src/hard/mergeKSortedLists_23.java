@@ -1,6 +1,5 @@
 package hard;
 
-import java.util.ArrayList;
 
 public class mergeKSortedLists_23 {
 
