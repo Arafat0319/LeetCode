@@ -1,7 +1,14 @@
 package medium;
 
-import easy.countAndSay;
 
+/**
+ * @Description		time : O(m * n)
+ * 					space : n
+ * @author 			Arafat	
+ * @Email			arafathayrat@gmail.com
+ * @version 		
+ * @date 			Mar 1, 2022	12:03:05 AM
+ */
 public class DP_coinChange_322 {
 
 	public static void main(String[] args) {
