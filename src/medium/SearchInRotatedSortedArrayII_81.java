@@ -1,6 +1,6 @@
 package medium;
 
-public class searchInRotateArrayII_81 {
+public class SearchInRotatedSortedArrayII_81 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
