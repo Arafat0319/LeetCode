@@ -11,10 +11,12 @@ public class DP_uniquePaths_62 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.out.println(uniquePaths(4, 5));
+		System.out.println(uniquePaths2(4, 5));
 
 	}
 
-	public int uniquePaths(int m, int n) {
+	public static int uniquePaths(int m, int n) {
 		if(m == 0 || n == 0)
 			return 1;
 		int[][] dp = new int[m][n];
@@ -27,4 +29,24 @@ public class DP_uniquePaths_62 {
 	
 		return dp[m - 1][n - 1];
 	}
+	
+
+	
+	
+	public static int res = 0;
+	public static int uniquePaths2(int m, int n) {
+        
+        dp(m - 1, n - 1);
+        
+        return res;
+    }
+    public static void dp(int m, int n){
+        if(m == -1 || n == -1)
+        	return;
+        if(m == 0 && n == 0) {
+    		res++;
+    	}
+        dp(m - 1, n);
+        dp(m, n - 1);
+    }
 }

@@ -27,6 +27,7 @@ public class DP_coinChange_322 {
 		for(int i = 1; i < amount + 1; i++) {
 			dp[i] = Integer.MAX_VALUE;
 			for(int j : coins) {
+				// dp[i - j] != Integer.MAX_VALUE是说他可以到达这一步
 				if(i >= j && dp[i - j] != Integer.MAX_VALUE)
 					dp[i] = Math.min(dp[i - j] + 1, dp[i]);
 			}
